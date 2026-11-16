@@ -5,26 +5,65 @@
   tag:    a line from the poster or a quote you like (leave "" to hide it)
   note:   what it taught you. Rewrite every note in your own words.
 */
+
 var stories = [
-  { title: "Titanic", kind: "Movie, 1997", type: "movie", poster: "images/titanic.jpg",
+
+  {
+    title: "Titanic",
+    kind: "Movie, 1997",
+    type: "movie",
+    poster: "titanic.jpg",
     tag: "Nothing on earth could come between them.",
-    note: "It made me see that time with the people we love is never guaranteed, so I try not to waste moments or leave important things unsaid." },
-  { title: "Swapped", kind: "Animated movie on Netflix", type: "movie", poster: "images/swapped.jpg",
+    note: "It made me see that time with the people we love is never guaranteed, so I try not to waste moments or leave important things unsaid."
+  },
+
+  {
+    title: "Swapped",
+    kind: "Animated movie on Netflix",
+    type: "movie",
+    poster: "swapped.jpg",
     tag: "Transform your destiny.",
-    note: "It showed me how different life looks from someone else’s side, and that I should listen before I judge." },
-  { title: "Obsession", kind: "Movie", type: "movie", poster: "images/obsession.jpg",
+    note: "It showed me how different life looks from someone else’s side, and that I should listen before I judge."
+  },
+
+  {
+    title: "Obsession",
+    kind: "Movie",
+    type: "movie",
+    poster: "obsession.jpg",
     tag: "Be careful who you wish for…",
-    note: "It made me think about how wanting something too badly can take over your judgment, and why I should keep my life balanced." },
-  { title: "My Neighbor Totoro", kind: "Anime movie, 1988", type: "anime", poster: "images/totoro.jpg",
+    note: "It made me think about how wanting something too badly can take over your judgment, and why I should keep my life balanced."
+  },
+
+  {
+    title: "My Neighbor Totoro",
+    kind: "Anime movie, 1988",
+    type: "anime",
+    poster: "totoro.jpg",
     tag: "",
-    note: "It reminds me to slow down, notice small things, and keep my sense of wonder." },
-  { title: "Ponyo", kind: "Anime movie, 2008", type: "anime", poster: "images/ponyo.jpg",
+    note: "It reminds me to slow down, notice small things, and keep my sense of wonder."
+  },
+
+  {
+    title: "Ponyo",
+    kind: "Anime movie, 2008",
+    type: "anime",
+    poster: "ponyo.jpg",
     tag: "Welcome to a world where anything is possible.",
-    note: "It reminds me that love and kindness can be simple and brave, and that our choices affect the world around us." },
-  { title: "Bet", kind: "TV series", type: "series", poster: "images/bet.jpg",
+    note: "It reminds me that love and kindness can be simple and brave, and that our choices affect the world around us."
+  },
+
+  {
+    title: "Bet",
+    kind: "TV series",
+    type: "series",
+    poster: "bet.jpg",
     tag: "",
-    note: "It made me think about how risky choices and the pressure to win can pull people into things they cannot easily leave." }
+    note: "It made me think about how risky choices and the pressure to win can pull people into things they cannot easily leave."
+  }
+
 ];
+
 
 /* the rows shown on the page */
 var groups = [
