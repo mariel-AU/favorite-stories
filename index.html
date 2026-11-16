@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stories That Taught Me How to Think</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OPENING SCREEN: plays for about 3 seconds, then lifts away -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="introIn">
+    <span class="introSmall">NOW SHOWING</span>
+    <span class="introTitle">MY STORIES</span>
+    <span class="introBar"></span>
+  </div>
+</div>
+
+<!-- scroll progress bar -->
+<div class="progress" id="progress"></div>
+
+<!-- TOP BAR -->
+<nav class="nav" id="nav">
+  <div class="navin">
+    <a class="logo" href="#top">MY STORIES</a>
+    <div class="links">
+      <a href="#rows">Favorites</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#me">My reflection</a>
+      <a href="#stay">What stays</a>
+      <a href="#credits">Credits</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO: the featured story. Filled in by script.js -->
+<header class="hero" id="top">
+  <div class="heroBg" id="heroBg"></div>
+  <div class="sparks" id="sparks" aria-hidden="true"></div>
+  <div class="heroIn">
+    <div class="heroText">
+      <h1 id="hTitle"></h1>
+      <p class="meta" id="hKind"></p>
+      <p class="hnote" id="hNote"></p>
+      <div class="hbtns">
+        <button class="btn play" id="hMore" type="button">More info</button>
+        <button class="btn ghost" id="surprise" type="button">Surprise me</button>
+      </div>
+    </div>
+    <img class="hposter" id="hPoster" alt="">
+  </div>
+</header>
+
+<!-- scrolling title strip -->
+<div class="ticker" aria-hidden="true"><div class="tickTrack" id="tickTrack"></div></div>
+
+<!-- numbers that count up. Filled in by script.js -->
+<section class="stats" id="stats" aria-label="My favorites in numbers"></section>
+
+<main>
+
+  <!-- POSTER ROWS: click any poster for details. Filled in by script.js -->
+  <div id="rows"></div>
+
+  <!-- QUIZ: the interactive feature. Filled in by script.js -->
+  <section class="panel quiz" id="quiz">
+    <h2>Which of my stories are you?</h2>
+    <p class="qlead">Answer three quick questions and I’ll pick the story that matches your mood.</p>
+    <div class="quizBox" id="quizBox"></div>
+  </section>
+
+  <section class="panel alt" id="me">
+    <h2>What these stories did to me</h2>
+    <div class="qa-grid">
+      <div class="qa">
+        <h3>What did these stories change in me?</h3>
+        <p>These stories changed how I look at people and at my own choices. Titanic reminds me that time with the people I love is limited, Swapped taught me to listen before I judge, and Bet showed me how pressure can push people into decisions that are hard to undo. Each one left me with an idea I still think about.</p>
+      </div>
+      <div class="qa">
+        <h3>Which scene, character, or idea stays with me the most?</h3>
+        <p>The idea that stays with me most comes from Titanic: the people we love are only here for a limited time. I think about it whenever I’m tempted to put off saying something that matters.</p>
+      </div>
+      <div class="qa">
+        <h3>How do I want you to feel?</h3>
+        <p>I want you to leave this site a little quieter than you arrived, and curious about the stories in your own life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="stay">
+    <h2>Three things that stay with me</h2>
+    <div class="things">
+      <div class="thing">
+        <h3>Time is not promised</h3>
+        <small>Theme from Titanic</small>
+        <p>Titanic reminds me that the people we love are not here forever. It pushes me to say what I mean today instead of waiting for a better moment.</p>
+      </div>
+      <div class="thing">
+        <h3>Notice the small things</h3>
+        <small>Theme from My Neighbor Totoro</small>
+        <p>Totoro is about stopping to notice small things like rain, a bus stop, and a quiet forest. It reminds me that wonder does not need a big event.</p>
+      </div>
+      <div class="thing">
+        <h3>Risky choices have a price</h3>
+        <small>Theme from Bet</small>
+        <p>Bet shows how the pressure to win can make people take risks they cannot take back. It makes me stop and ask what a choice could cost before I make it.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="credits">
+  <h2>Credits</h2>
+
+  <p><strong>Tools:</strong> Sublime Text for writing the code, hand-written HTML, CSS and JavaScript, Google Fonts (Bebas Neue and DM Sans), and GitHub Pages for hosting.</p>
+
+  <p><strong>Where AI helped:</strong> I used Claude, an AI assistant, to help build the page structure, the layout and design, the code for the poster rows, the featured banner, the details window, the quiz, the opening screen and the animations, and the draft wording of my reflection and poster notes. I chose the stories and the posters, asked for the Netflix-style design in pink, black and white, and read and edited the text before publishing.</p>
+
+  <p><strong>Images:</strong> The posters are used for educational purposes only, and they belong to their studios: Titanic (Paramount Pictures), Swapped (Netflix and Skydance Animation), Obsession (Focus Features), My Neighbor Totoro (Studio Ghibli), Ponyo (Studio Ghibli and Walt Disney Pictures), Bet (promotional poster; rights belong to its producers). No full movies or episodes are uploaded on this site.</p>
+
+  <p><strong>Originality:</strong> This site was built from scratch for this lab. It was not copied from another student’s site or from a template.</p>
+
+  <p><strong>Design:</strong> The dark background with a pink accent and rows of posters is inspired by streaming sites, so my favorites feel like a personal watchlist. The quiz lets visitors find the story that matches their mood. The animations are turned off automatically for visitors who prefer reduced motion.</p>
+</footer>
+
+<!-- DETAILS WINDOW: opens when a poster is clicked -->
+<div class="modal" id="modal" hidden>
+  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="mclose" id="mClose" type="button" aria-label="Close">×</button>
+    <img id="mPoster" alt="">
+    <div class="mtext">
+      <h2 id="mTitle"></h2>
+      <p class="meta" id="mKind"></p>
+      <blockquote id="mTag"></blockquote>
+      <h3>What it taught me</h3>
+      <p id="mNote"></p>
+    </div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
